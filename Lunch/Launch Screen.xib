@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Tdu-nd-BXn">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scroll" translatesAutoresizingMaskIntoConstraints="NO" id="Sro-aY-oVA">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="ENh-LV-xTd"/>
+                        <constraint firstAttribute="width" constant="120" id="PAr-9u-5Z9"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ENh-LV-xTd"/>
+                            <exclude reference="PAr-9u-5Z9"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="ENh-LV-xTd"/>
+                            <include reference="PAr-9u-5Z9"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Sro-aY-oVA" firstAttribute="centerX" secondItem="Tdu-nd-BXn" secondAttribute="centerX" id="121-h9-sE1"/>
+                <constraint firstItem="Tdu-nd-BXn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HiH-0C-8pS"/>
+                <constraint firstItem="Tdu-nd-BXn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ras-AK-aT2"/>
+                <constraint firstAttribute="bottom" secondItem="Tdu-nd-BXn" secondAttribute="bottom" id="UiT-yD-glf"/>
+                <constraint firstItem="Sro-aY-oVA" firstAttribute="centerY" secondItem="Tdu-nd-BXn" secondAttribute="centerY" id="bFJ-yM-wTh"/>
+                <constraint firstAttribute="trailing" secondItem="Tdu-nd-BXn" secondAttribute="trailing" id="zEf-Md-IvR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Tdu-nd-BXn"/>
+                    <exclude reference="Sro-aY-oVA"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="HiH-0C-8pS"/>
+                    <exclude reference="Ras-AK-aT2"/>
+                    <exclude reference="UiT-yD-glf"/>
+                    <exclude reference="zEf-Md-IvR"/>
+                    <exclude reference="121-h9-sE1"/>
+                    <exclude reference="bFJ-yM-wTh"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Tdu-nd-BXn"/>
+                    <include reference="Sro-aY-oVA"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="HiH-0C-8pS"/>
+                    <include reference="Ras-AK-aT2"/>
+                    <include reference="UiT-yD-glf"/>
+                    <include reference="zEf-Md-IvR"/>
+                    <include reference="121-h9-sE1"/>
+                    <include reference="bFJ-yM-wTh"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="404" y="445"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="1536" height="2048"/>
+        <image name="scroll" width="504" height="592"/>
+    </resources>
+</document>
